@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 3</title>
+    <meta charset="UTF-8">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table td {
+            padding: 3px 12px;
+        }
+        table td:first-child {
+            font-weight: bold;
+        }
+
+        table td span {
+            font-weight: normal;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+<form action="" method="get">
+    <table>
+        <tr>
+            <td>Ваше имя:</td>
+            <td><input type="text" name="name" placeholder="Валерия Станилеско" size="45"></td>
+        </tr>
+        <tr>
+            <td>
+                Пароль:<br/>
+                <span>(может содержать только цифры и<br/> буквы латинского алфавита)</span>
+            </td>
+            <td><input type="password" name="password" size="45"></td>
+        </tr>
+        <tr>
+            <td>Дата регистрации</td>
+            <td>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="etc">...</option>
+                </select>
+                <select>
+                    <option value="january">Январь</option>
+                    <option value="February">Февраль</option>
+                    <option value="March">Март</option>
+                    <option value="April">Апрель</option>
+                    <option value="May">Май</option>
+                    <option value="June">Июнь</option>
+                    <option value="July">Июль</option>
+                    <option value="etc">...</option>
+                </select>
+                <input type="text" name="year" placeholder="1990">
+            </td>
+        </tr>
+        <tr>
+            <td>Пол:</td>
+            <td>
+                <p>
+                    <input type="radio" name="sex" id="man"/> 
+                    <label for="man">Мужской</label>
+                </p>
+                <p>
+                    <input type="radio" name="sex" id="woman"/> 
+                    <label for="woman">Женский</label>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" id="coffee"> 
+                <label for="coffee"> Да,  я желаю получать регулярно две чашки кофе на свой рабочий стол</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Сколько писем в день вы обычно получаете?</td>
+            <td>
+                <p>
+                    <input type="radio" name="mail" id="1-2"/> 
+                    <label for="1-2">Одно-два</label>
+                </p>
+                <p>
+                    <input type="radio" name="mail" id="10"/> 
+                    <label for="10">До 10</label>
+                </p>
+                <p>
+                    <input type="radio" name="mail" id="many"/> 
+                    <label for="many">Очень много</label>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>Укажите какими компьютерными направлениями вы увлечены</td>
+            <td>
+                <select multiple="multiple" size="7" style="width: 255px;">
+                    <option value="1">Компьютерная графика (дизайн)</option>
+                    <option value="2">Проектирование</option>
+                    <option value="3">Програмирование</option>
+                    <option value="4">Набор текста</option>
+                    <option value="5">Игры</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Ваши пожелания к работе почтовой системы</td>
+            <td>
+                <textarea cols="33" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Аватарка:<br/>
+                <span>(размером 100 x 100)</span>
+            </td>
+            <td>
+                <input type="file">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Отправить данные">
+                <input type="reset" value="Очистить форму">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
